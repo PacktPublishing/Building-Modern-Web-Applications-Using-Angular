@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manually creating an Observable</title>
+</head>
+<body>
+<script type="text/babel">
+  const observable = Rx.Observable.create((observer) => {
+    observer.next(1);
+    observer.next(2);
+
+    setTimeout(() => {
+      observer.next(3);
+      observer.next(4);
+      observer.complete();
+    }, 1000);
+
+    observer.next(5);
+  });
+
+  console.log('Before subscribe');
+
+  observable.subscribe({
+    next: val => console.log(`Got value ${val}`),
+    error: err => console.log(`Something went wrong ${err}`),
+    complete: () => console.log('I am done')
+  });
+
+  console.log('After subscribe');
+</script>
+
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script src="https://unpkg.com/@reactivex/rxjs/dist/global/Rx.js">
+</script>
+
+</body>
+</html>

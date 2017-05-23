@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.left-container {
+  width: 30%;
+  float: left;
+}
+
+.left-container ul {
+  list-style: none;
+}
+
+.left-container ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.right-container {
+  width: 69%;
+  float: right;
+}
+
+.right-container  img {
+  width: 100px;
+}

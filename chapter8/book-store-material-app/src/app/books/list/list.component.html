@@ -1,0 +1,14 @@
+<md-progress-spinner color="accent" mode="indeterminate" [style.display]="spinnerVisibility" class="spinner">
+</md-progress-spinner>
+<div fxLayout="column" fxFlex *ngIf="booksList.length > 0">
+  <h2 class="page-title">Books List Page</h2>
+  <section fxLayout="row" fxLayoutWrap fxLayout.sm="column" fxLayoutGap="24px" fxLayoutAlign="center">
+    <md-card class="book-card" *ngFor="let book of booksList">
+      <img md-card-image [src]="book.coverImage">
+      <md-card-actions>
+        <button md-button>DETAIL</button>
+        <button md-button (click)="deleteBook(book.id)">DELETE</button>
+      </md-card-actions>
+    </md-card>
+  </section>
+</div>

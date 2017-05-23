@@ -1,0 +1,44 @@
+<div fxLayout="column" fxFlex>
+
+  <md-toolbar color="primary">
+    <button md-icon-button (click)="sidenav.toggle()">
+      <md-icon>menu</md-icon>
+    </button>
+    <span>Book Store</span>
+    <span class="spacer"></span>
+    <button md-mini-fab (click)="openAddBookDialog()">
+      <md-icon>add</md-icon>
+    </button>
+  </md-toolbar>
+
+  <md-sidenav-container fxFlex>
+    <md-sidenav mode="over" #sidenav>
+      <md-nav-list>
+        <md-list-item *ngFor="let link of links">
+          <p>{{link.name}}</p>
+        </md-list-item>
+      </md-nav-list>
+    </md-sidenav>
+    <div class="content" fxLayout="column" fxFlex>
+      <md-tab-group>
+        <md-tab label="Master Detail">
+          <div fxFlex class="master-detail-container">
+            <bl-master-detail fxFlex></bl-master-detail>
+          </div>
+        </md-tab>
+        <md-tab label="List">
+          <div fxFlex class="books-list-container">
+            <bl-list fxFlex></bl-list>
+          </div>
+        </md-tab>
+      </md-tab-group>
+    </div>
+  </md-sidenav-container>
+
+</div>
+
+
+
+
+
+

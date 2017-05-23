@@ -1,0 +1,52 @@
+{
+  "name": "01-isolated-unit-tests",
+  "version": "1.0.0",
+  "description": "Angular Isolated Unit Tests",
+  "scripts": {
+    "clean": "rimraf ./src/**/*.js ./src/**/*.js.map",
+    "build": "tsc -p src/",
+    "serve": "lite-server -c=bs-config.json",
+    "prestart": "npm run build",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
+    "build:watch": "tsc -p src/ -w",
+    "lint": "tslint ./src/**/*.ts -t verbose",
+    "karma": "karma start karma.conf.js",
+    "pretest:once": "npm run build",
+    "pretest": "npm run build",
+    "test:once": "npm run karma -- --single-run",
+    "test": "concurrently \"npm run build:watch\" \"npm run karma\""
+  },
+  "author": "Shravan Kumar Kasagoni",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/compiler-cli": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/router": "~4.0.0",
+    "@angular/tsc-wrapped": "~4.0.0",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.1",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "2.5.36",
+    "@types/node": "^6.0.45",
+    "concurrently": "^3.0.0",
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "lite-server": "^2.2.2",
+    "rimraf": "^2.6.1",
+    "tslint": "^3.15.1",
+    "typescript": "~2.2.0"
+  }
+}

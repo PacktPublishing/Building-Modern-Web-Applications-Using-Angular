@@ -1,0 +1,42 @@
+.books-list-container {
+  overflow: auto;
+  height: 100%;
+}
+
+.books-list-title {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 10px;
+
+  h4 {
+    margin: 0;
+    float: left;
+  }
+
+  a {
+    float: right;
+  }
+}
+
+.books-list-content-container {
+  height: auto;
+  padding: 20px 0;
+
+  .mdl-card {
+    width: 250px;
+    height: 348px;
+  }
+
+  .book-card {
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+
+    .mdl-card__title {
+      color: #fff;
+      background: #ffffff no-repeat;
+      background-size: 100% 100%;
+      padding: 0;
+    }
+  }
+}

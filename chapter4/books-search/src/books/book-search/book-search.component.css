@@ -1,0 +1,68 @@
+.page-title {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.search-container {
+  height: 70px;
+  line-height: 70px;
+  padding: 1rem;
+}
+
+.books-search-form {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.books-search-form .search-input {
+  width: 80%;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: rgb(70, 74, 76);
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.14902);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.books-search-form button {
+  width: 20%;
+  border-radius: 0 !important;
+}
+
+.title-suggestion-list--wrapper {
+  width: 500px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+}
+
+.title-suggestion-list {
+  width: 80%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .15);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.14902);
+  display: none;
+}
+
+.title-suggestion-list li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 2rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.title-suggestion-list li:hover {
+  background-color: #f4f4f4;
+}

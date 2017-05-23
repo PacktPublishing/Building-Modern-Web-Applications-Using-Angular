@@ -1,0 +1,12 @@
+<h3 class="page-title">Books Search</h3>
+<div class="search-container">
+  <div class="books-search-form">
+    <input type="text" #searchInput class="search-input" placeholder="Book Title" [(ngModel)]="searchInputTerm">
+    <button class="btn btn-primary" (click)="searchBooks()">Search</button>
+  </div>
+  <div class="title-suggestion-list--wrapper">
+    <ul class="title-suggestion-list" #suggestions [style.display]="bookTitles.length > 0 ? 'block' : 'none'">
+      <li *ngFor="let bookTitle of bookTitles">{{bookTitle}}</li>
+    </ul>
+  </div>
+</div>

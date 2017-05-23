@@ -1,0 +1,43 @@
+html, body {
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+
+  height: 100%;
+  width: 100%;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.p-a {
+  padding: 1rem;
+}
+
+.m-t {
+  margin-top: 1rem;
+}
+
+.page-title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.spinner {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

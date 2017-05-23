@@ -1,0 +1,8 @@
+.mdl-layout__drawer .mdl-layout-title {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.page-content {
+  overflow: hidden;
+  height: calc(100% - 64px);
+}

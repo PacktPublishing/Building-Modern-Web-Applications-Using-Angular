@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+
+.clear {
+  display: block;
+  overflow: hidden;
+}
+
+.box {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.15);
+}
+
+.box-header {
+  position: relative;
+  padding: 1rem;
+}
+
+.box-header h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.box-divider {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  margin: 0 0 !important;
+  height: 0;
+}
+
+.box-body {
+  padding: 1rem;
+}
+
+.form-control {
+  border-color: rgba(120, 130, 140, 0.2);
+  border-radius: 0;
+  min-height: 2.375rem;
+}
+
+.check-label {
+  cursor: pointer;
+  padding-left: 1.25rem;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.check-label input {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+  margin-left: -1.25rem;
+}
+
+.check-label > i {
+  width: 0;
+  height: 18px;
+  line-height: 1;
+  margin-left: -20px;
+  margin-top: 1px;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 28px;
+  position: relative;
+}
+
+.check-label > i:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 100%;
+  border: 2px solid #9e9e9e;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.check-label input[type="checkbox"]:checked + i:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  display: table;
+  width: 6px;
+  height: 12px;
+  border: 2px solid;
+  border-top: 0;
+  border-left: 0;
+  content: ' ';
+}
+
+.check-label input:checked + i:before {
+  border-width: 0;
+  background-color: inherit;
+}
+
+.blue {
+  background-color: #2196f3;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.check-label input[type="radio"] + i, .check-label input[type="radio"] + i:before {
+  border-radius: 50%;
+}
+
+.check-label input[type="radio"]:checked + i:after {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  display: table;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  content: ' ';
+}
+
+.spacer {
+  padding-left: 0.3rem;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}

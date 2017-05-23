@@ -1,0 +1,19 @@
+<div>
+  <div class="left-container">
+    <ul>
+      <li *ngFor="let book of booksList" (click)="getBookInfo(book.id)">
+        {{book.title}}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf='book' class="right-container">
+    <p>{{book.isbn}}</p>
+    <p>{{book.title}}</p>
+    <p>{{book.authors}}</p>
+    <p>{{book.published}}</p>
+    <p>{{book.description}}</p>
+    <p>
+      <img [src]="book.coverImage" [alt]="book.isbn" />
+    </p>
+  </div>
+</div>

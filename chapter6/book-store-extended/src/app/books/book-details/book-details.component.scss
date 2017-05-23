@@ -1,0 +1,47 @@
+.selected-book {
+  display: flex;
+  min-height: 200px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  right: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 20px;
+
+  .selected-book-cover {
+    margin-right: 20px;
+
+    img {
+      width: 250px;
+    }
+  }
+
+  .selected-book-detail {
+    width: calc(100% - 270px);
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .description {
+      font-weight: bold;
+      line-height: 200%;
+    }
+  }
+}
+
+.action-bar {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  button {
+    float: right;
+    margin-left: 10px;
+  }
+}
+

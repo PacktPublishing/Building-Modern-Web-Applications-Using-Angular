@@ -1,0 +1,102 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  overflow: hidden;
+}
+
+.clear {
+  display: block;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+.border-divider {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  height: 100%;
+  padding: 0;;
+  border-right: 1px solid rgba(120, 130, 140, 0.13);
+}
+
+.list-item {
+  list-style-type: disc;
+  display: block;
+  position: relative;
+  padding: 1rem;
+}
+
+.list-item:hover {
+  background-color: rgba(0, 0, 0, 0.065);
+}
+
+.cover-image-container {
+  float: left;
+  margin-right: 1rem;
+}
+
+.cover-image-container .cover-image {
+  width: 40px;
+  height: 40px;
+  line-height: 2.5rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.cover-image-container .cover-image img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+.book-title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.book-author {
+  font-size: 0.8125rem;
+  opacity: 0.6;
+}
+
+.selected-book img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.selected-book p {
+  margin-left: 1rem;
+  font-size: 0.8125rem;
+}
+
+.n-p-r {
+  padding-right: 0 !important;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  border-radius: 0 !important;
+}

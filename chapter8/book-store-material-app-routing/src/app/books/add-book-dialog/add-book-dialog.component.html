@@ -1,0 +1,36 @@
+<h3>Add Book</h3>
+<form #form="ngForm" (ngSubmit)="dialogRef.close(form.value)" ngNativeValidate>
+
+  <div fxLayout="column" fxLayoutGap="8px">
+
+    <md-input-container>
+      <input mdInput ngModel name="title" placeholder="Book Title" required>
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput ngModel name="authors" placeholder="Authors" required>
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput ngModel name="published" placeholder="Published" required>
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput ngModel name="isbn" placeholder="ISBN" required>
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput ngModel name="coverImage" placeholder="Cover Image" required>
+    </md-input-container>
+
+    <md-input-container>
+      <textarea mdInput ngModel name="description" placeholder="Description" rows="3" cols="60" required></textarea>
+    </md-input-container>
+
+  </div>
+
+  <md-dialog-actions align="end">
+    <button md-button type="button" (click)="dialogRef.close()">Cancel</button>
+    <button md-button color="accent">Save Book</button>
+  </md-dialog-actions>
+</form>

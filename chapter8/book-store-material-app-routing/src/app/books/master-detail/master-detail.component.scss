@@ -1,0 +1,57 @@
+.books-list {
+  background: #ffffff;
+  box-shadow: 0 0 1px rgba(0,0,0,.15);
+}
+
+md-sidenav {
+  width: 300px;
+  border-right: 1px solid rgba(0,0,0,.04);
+}
+
+md-nav-list {
+  padding-top: 0;
+
+  h2 {
+    font-size: 0.875rem !important;
+  }
+
+  p {
+    font-size: 0.75rem !important;
+  }
+}
+
+.books-list-item {
+  padding: 0 1rem 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.books-list-item--detail {
+  /*box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);*/
+}
+
+.books-list-item--coverimage {
+  width: 150px;
+  padding: 1rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+.books-list-item--content {
+  padding: 1rem 1rem 1rem 0;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.875rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 0.875rem;
+    line-height: 150%;
+  }
+}

@@ -1,0 +1,24 @@
+<div *ngIf="book">
+  <div class="selected-book">
+    <div class="selected-book-cover">
+      <img [src]="book.coverImage" alt="cover image" class=""/>
+    </div>
+    <div class="selected-book-detail">
+      <h2>{{book.title}}</h2>
+      <p>Authors: {{book.authors}}</p>
+      <p>ISBN: {{book.isbn}}</p>
+      <p>Published: {{book.published}}</p>
+      <p class="description">{{book.description}}</p>
+    </div>
+  </div>
+  <div class="action-bar">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+            (click)="goBack()">
+      Go Back
+    </button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            (click)="deleteBook(book.id)">
+      Delete Book
+    </button>
+  </div>
+</div>

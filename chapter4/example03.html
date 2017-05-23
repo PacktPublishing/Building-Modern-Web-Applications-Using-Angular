@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Using Subscription Object</title>
+</head>
+<body>
+<script type="text/babel">
+
+  const interval = Rx.Observable.interval(1000);
+  const subscription = interval.subscribe(val => console.log(val));
+
+  setTimeout(() => {
+    subscription.unsubscribe();
+  }, 10000);
+
+</script>
+
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="https://unpkg.com/@reactivex/rxjs/dist/global/Rx.js"></script>
+
+</body>
+</html>

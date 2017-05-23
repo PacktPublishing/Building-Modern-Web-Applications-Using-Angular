@@ -1,0 +1,29 @@
+.selected-book {
+  display: flex;
+  min-height: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.selected-book-cover {
+  margin-right: 20px;
+}
+
+.selected-book-cover img {
+  width: 150px;
+}
+
+.selected-book-detail {
+  width: calc(100% - 170px);
+}
+
+.selected-book-detail h4 {
+  margin-top: 0;
+}
+
+.action-bar {
+  padding-left: 20px;
+}

@@ -1,0 +1,27 @@
+<div class="app-container">
+  <h3 class="title">Books List</h3>
+  <div class="border-divider"></div>
+  <div *ngIf="booksList.length === 0" class="m-3 alert alert-danger" role="alert">
+    No book available at this moment.
+  </div>
+  <div class="row" *ngIf="booksList.length > 0">
+    <div class="col-sm-4 col-md-3 n-p-r">
+      <ul class="list">
+        <li class="list-item" *ngFor="let book of booksList" (click)="getBookDetails(book.isbn)">
+          <div class="cover-image-container">
+          <span class="cover-image">
+            <img [src]="book.coverImage" alt="cover image" />
+          </span>
+          </div>
+          <div class="clear">
+            <h3 class="book-title">{{book.title}}</h3>
+            <h4 class="book-author">{{book.authors}}</h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-8 col-md-9">
+      <book-details [book]="selectedBook" (onDelete)="deleteBook($event)"></book-details>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>Angular Hello World</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="node_modules/core-js/client/shim.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script>
+
+    System.config({
+      paths: {
+        'ng:': 'node_modules/@angular/'
+      },
+      map: {
+        '@angular/core': 'ng:core/bundles/core.umd.js',
+        '@angular/common': 'ng:common/bundles/common.umd.js',
+        '@angular/compiler': 'ng:compiler/bundles/compiler.umd.js',
+        '@angular/platform-browser': 'ng:platform-browser/bundles/platform-browser.umd.js',
+        '@angular/platform-browser-dynamic': 'ng:platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
+        'rxjs': 'node_modules/rxjs'
+      },
+      packages: {
+        src: {
+          main: 'app',
+          defaultExtension: 'js'
+        },
+        rxjs: {
+          defaultExtension: 'js'
+        }
+      }
+    });
+
+    System.import('src').catch(function (err) {
+      console.error(err);
+    });
+  </script>
+</head>
+
+<body>
+<hello-world-app>Loading...</hello-world-app>
+</body>
+
+</html>

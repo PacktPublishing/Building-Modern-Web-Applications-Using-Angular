@@ -1,0 +1,46 @@
+<section class="new-book-container">
+  <h4>Add Book</h4>
+
+  <form novalidate [formGroup]="newBookForm" (ngSubmit)="saveBook()">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" id="isbn" formControlName="isbn">
+      <label class="mdl-textfield__label" for="isbn">ISBN</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" id="title" formControlName="title">
+      <label class="mdl-textfield__label" for="title">Book Title</label>
+    </div>
+    <br/>
+
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" id="authors" formControlName="authors">
+      <label class="mdl-textfield__label" for="authors">Authors</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
+      <input class="mdl-textfield__input" type="text" id="published" formControlName="published">
+      <label class="mdl-textfield__label" for="published">Published</label>
+    </div>
+    <br/>
+
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label floating-label-full">
+      <input class="mdl-textfield__input" type="text" id="description" formControlName="description">
+      <label class="mdl-textfield__label" for="description">Description</label>
+    </div>
+    <br/>
+
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label floating-label-full">
+      <input class="mdl-textfield__input" type="text" id="coverImage" id="coverImage" formControlName="coverImage">
+      <label class="mdl-textfield__label" for="coverImage">Cover Image</label>
+    </div>
+    <br/>
+
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+            [disabled]="newBookForm.invalid">
+      Save
+    </button>
+
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" (click)="this.location.back()">
+      Cancel
+    </button>
+  </form>
+</section>

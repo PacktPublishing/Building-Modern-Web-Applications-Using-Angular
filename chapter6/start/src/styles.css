@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #616161;
+}
+
+.mdl-layout__drawer .mdl-layout-title {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.page-content {
+  overflow: hidden;
+  height: calc(100% - 64px);
+}
+
+.content-container {
+  overflow: hidden;
+  height: calc(100% -  53px);
+}
+
+.books-list-title {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 10px;
+}
+
+.books-list-title h4 {
+  margin: 0;
+}
+
+.books-list-grid {
+  padding: 0;
+  height: 100%;
+}
+
+.books-list-grid-left-col, .books-list-grid-right-col {
+  margin: 0;
+  overflow: auto;
+}
+
+.books-list-grid-left-col {
+  border-right: 1px solid #E0E0E0;
+}
+
+.list {
+  padding: 0;
+  margin-top: 0;
+}
+
+.list-item {
+  list-style-type: disc;
+  display: block;
+  position: relative;
+  padding: 0.8rem;
+  border-bottom: 1px solid rgba(120,130,140,.065);
+}
+
+.list-item:hover {
+  background-color: #e0e0e0;
+}
+
+.cover-image-container {
+  float: left;
+  margin-right: 1rem;
+}
+
+.cover-image-container .cover-image {
+  width: 40px;
+  height: 40px;
+  line-height: 2.5rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.cover-image-container .cover-image img {
+  width: 100%;
+  vertical-align: 0;
+  border: 0;
+}

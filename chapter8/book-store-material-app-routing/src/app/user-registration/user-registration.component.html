@@ -1,0 +1,75 @@
+<div class="user-registration-form p-a">
+  <h3>User Registration</h3>
+  <form #form="ngForm" (ngSubmit)="submitUserForm(form.value)" ngNativeValidate>
+
+    <div fxLayout="column" fxLayoutGap="8px">
+
+      <div fxLayout="row" fxLayoutGap="16px">
+        <md-input-container fxFlex>
+          <input mdInput ngModel name="firstName" placeholder="First Name" required>
+        </md-input-container>
+
+        <md-input-container fxFlex>
+          <input mdInput ngModel name="lastName" placeholder="Last Name" required>
+        </md-input-container>
+      </div>
+
+      <div fxLayout="row" fxLayoutGap="16px">
+        <md-input-container fxFlex>
+          <input mdInput ngModel name="password" placeholder="Password" required>
+        </md-input-container>
+
+        <md-input-container fxFlex>
+          <input mdInput ngModel name="confirmPassword" placeholder="Confirm Password" required>
+        </md-input-container>
+      </div>
+
+      <div ngModelGroup="address" fxLayout="column" fxLayoutGap="8px">
+
+        <div fxLayout="row" fxLayoutGap="16px">
+          <md-input-container fxFlex>
+            <input mdInput ngModel name="street" placeholder="Street" required>
+          </md-input-container>
+
+          <md-input-container fxFlex>
+            <input mdInput ngModel name="city" placeholder="City" required>
+          </md-input-container>
+        </div>
+
+        <div fxLayout="row" fxLayoutGap="16px">
+          <md-input-container fxFlex>
+            <input mdInput ngModel name="state" placeholder="State" required>
+          </md-input-container>
+          <md-input-container fxFlex>
+            <input mdInput ngModel name="zip" placeholder="Zip" required>
+          </md-input-container>
+        </div>
+
+      </div>
+
+      <md-select name="country" placeholder="Country" ngModel required>
+        <md-option *ngFor="let country of countries" [value]="country.code">
+          {{ country.name }}
+        </md-option>
+      </md-select>
+
+      <md-radio-group class="gender-radio-group" ngModel name="gender" class="m-t" required>
+        <md-radio-button class="gender-radio-button" *ngFor="let gender of genders" [value]="gender">
+          {{gender}}
+        </md-radio-button>
+      </md-radio-group>
+
+      <md-slide-toggle ngModel name="isAdmin" class="m-t">Admin User</md-slide-toggle>
+
+      <md-checkbox name="agreement" ngModel class="m-t" required>
+        I agree to the Terms of Service
+      </md-checkbox>
+
+      <div fxFlexAlign="end">
+        <button md-raised-button color="accent" class="m-t">Save User</button>
+      </div>
+
+    </div>
+  </form>
+
+</div>
