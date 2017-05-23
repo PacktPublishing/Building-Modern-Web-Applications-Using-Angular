@@ -28,9 +28,7 @@ The code will look like the following:
 * Operating system:
 * MAC OS X 10.9 and higher
 * WINDOWS 7 and higher
-* Node.js 6:
-      * MAC: https://nodejs.org/dist/v6.10.3/node-v6.10.3.pkg
-      * Windows: https://nodejs.org/dist/v6.10.3/node-v6.10.3-x64.msi
+* Node.js 6:For Mac: https://nodejs.org/dist/v6.10.3/node-v6.10.3.pkg and For Windows: https://nodejs.org/dist/v6.10.3/node-v6.10.3-x64.msi
 * Any code editor
 * Visual Studio Code
 * Sublime
