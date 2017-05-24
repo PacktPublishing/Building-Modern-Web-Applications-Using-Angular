@@ -35,13 +35,13 @@ The code will look like the following:
 
 ## Related Products:
 
-* [Using Yocto Project with BeagleBone Black]( https://www.packtpub.com/hardware-and-creative/yocto-beaglebone?utm_source=github&utm_medium=repository&utm_content=9781785289736 )
+* [Mastering AngularJS for .NET Developers]( https://www.packtpub.com/web-development/mastering-angularjs-net-developers?utm_source=github&utm_medium=repository&utm_content=9781783553983 )
 
-* [ARM® Cortex® M4 Cookbook]( https://www.packtpub.com/hardware-and-creative/arm-cortex-m4-cookbook?utm_source=github&utm_medium=repository&utm_content=9781782176503 )
+* [AngularJS UI Development]( https://www.packtpub.com/web-development/angularjs-ui-development?utm_source=github&utm_medium=repository&utm_content=9781783288472 )
 
-* [BeagleBone Home Automation Blueprints]( https://www.packtpub.com/hardware-and-creative/beaglebone-home-automation-blueprints?utm_source=github&utm_medium=repository&utm_content=9781783986026 )
+* [MEAN Web Development]( https://www.packtpub.com/web-development/mean-web-development?utm_source=github&utm_medium=repository&utm_content=9781783983285 )
 
-* [Building Networks and Servers Using BeagleBone]( https://www.packtpub.com/hardware-and-creative/building-networks-and-servers-using-beaglebone?utm_source=github&utm_medium=repository&utm_content=9781784390204 )
+* [Object-Oriented JavaScript - Second Edition]( https://www.packtpub.com/web-development/object-oriented-javascript-second-edition?utm_source=github&utm_medium=repository&utm_content=9781849693127 )
 
 ### Suggestions and Feedback
 [Click here]( https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform ) if you have any feedback or suggestions.
