@@ -1,5 +1,5 @@
 # Building Modern Web Applications Using Angular
-This is the code repository for [Building Modern Web Application using Angular](https://www.packtpub.com/web-development/angular-ui-development?utm_source=github&utm_medium=repository&utm_content=9781785880728), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
+This is the code repository for [Building Modern Web Applications Using Angular](https://www.packtpub.com/web-development/angular-ui-development?utm_source=github&utm_medium=repository&utm_content=9781785880728), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
 
 ## About the Book
 Angular is an modern web application development framework. With Angular you could develop web apps using different flavors of JavaScript such as ES5 (the current version of JavaScript), ES6/ES2015 (upcoming version of JavaScript or TypeScript (typed superset of JavaScript) or any language that can be compiled into JavaScript. Its component-based architecture makes life easy for developers to build complex UI applications.
@@ -13,22 +13,22 @@ All of the code is organized into folders. Each folder starts with a number foll
 
 The code will look like the following:
        
-       static int ngpios;
-       static int gpios[2] = { -1 , -1 };
-       module_param_array(gpios, int, &ngpios, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP);
-       MODULE_PARM_DESC(gpios, "Defines the GPIOs number to be used as a list of"
-                        " numbers separated by commas.");
-
-       /* Logging stuff */
-       #define __message(level, fmt, args...)                                  \
-                       printk(level "%s: " fmt "\n" , NAME , ## args)
+       {
+          "name": "event-binding",
+          "version": "1.0.0",
+          "scripts": {
+            "prestart": "npm run build",
+            "start": "concurrently \"tsc -w\"  \"lite-server\"",
+            "build": "tsc"
+       },
 
 ### Software requirements:
 
 * Operating system:
 * MAC OS X 10.9 and higher
 * WINDOWS 7 and higher
-* Node.js 6:For Mac: https://nodejs.org/dist/v6.10.3/node-v6.10.3.pkg and For Windows: https://nodejs.org/dist/v6.10.3/node-v6.10.3-x64.msi
+* Node.js 6:For Mac: https://nodejs.org/dist/v6.10.3/node-v6.10.3.pkg and 
+                For Windows: https://nodejs.org/dist/v6.10.3/node-v6.10.3-x64.msi
 * Any code editor
 * Visual Studio Code
 * Sublime
