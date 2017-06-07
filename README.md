@@ -9,7 +9,7 @@ This book takes you on a journey from the basics of Angular to creating cutting 
 This book starts with basic of Angular 2 and brushing you up with the new features of Angular 4. It shows you how to build an end-to-end conference management application using the individual Angular 2 and Angular 4 features explained in previous chapters. Along with covering framework, it will also explain how to structure complex applications and give you some best practices to follow. Towards the end of the book you'll learn how to build one end-to-end application by with eh knowledge gained from the previous chapters by implementing, testing, and deploying the app. Finally the book explains how to use third-party frameworks based on both Angular 2 and Angular 4.
 
 ## Instructions and Navigations
-All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter1
+All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter01
 
 The code will look like the following:
        
