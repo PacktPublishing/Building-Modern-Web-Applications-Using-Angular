@@ -1,3 +1,8 @@
+## $5 Tech Unlocked 2021!
+[Buy and download this Book for only $5 on PacktPub.com](https://www.packtpub.com/product/building-modern-web-applications-using-angular-4/9781785880728)
+-----
+*If you have read this book, please leave a review on [Amazon.com](https://www.amazon.com/gp/product/1785880721).     Potential readers can then use your unbiased opinion to help them make purchase decisions. Thank you. The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
+
 # Building Modern Web Applications Using Angular
 This is the code repository for [Building Modern Web Applications Using Angular](https://www.packtpub.com/web-development/angular-ui-development?utm_source=github&utm_medium=repository&utm_content=9781785880728), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
 
